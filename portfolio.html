@@ -8,22 +8,42 @@
 	<link rel="shortcut icon" type="image/png" href="assets/images/favicon-k.png"/>
 	<link rel="shortcut icon" type="image/png" href="assets/images/favicon-k.png"/>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+	<!-- Responsive-Portfolio Stylesheet
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
 </head>
 <body>
 	<header>
-		<div class="wrapper">
-			<h1>kenput3r</h1>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a id="SiteTitle" class="navbar-brand">kenput3r</a>
+					<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#Collapsable" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span> 
+						<span class="icon-bar"></span> <span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
+					</button>
+				</div>
 
-			<nav>
-				<ul>
-					<li><a href="index.html">About</a> |</li>
-					<li><a href="portfolio.html">Portfolio</a> |</li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
+				<div id="Collapsable" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="index.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 
 	<div id="Modal" class="display-none">
@@ -35,59 +55,59 @@
 
 	</div>
 
-	<main id="Main" class="wrapper">
-		<section id="PageContent">
-			<div class="box">
-				<h2>Portfolio</h2>
+	<main id="Main" class="container">
+		<div class="row">
+			<section id="PageContent" class="col-sm-7">
+				<div class="box">
+					<h2>Portfolio</h2>
 
-				<hr>
+					<hr>
 
-				<div class="grid">
-					<div class="grid__item">
-						<img class="thumbnail" src="assets/images/site-1.jpg" alt="Suavecito's Website" data="https://www.suavecito.com">
-						<h4><a href="https://www.suavecito.com" target="_blank">Suavecito.com</a></h4>
+					<div class="grid">
+						<div class="grid__item">
+							<img class="thumbnail" src="assets/images/site-1.jpg" alt="Suavecito's Website" data="https://www.suavecito.com">
+							<h4><a href="https://www.suavecito.com" target="_blank">Suavecito.com</a></h4>
+						</div>
+
+						<div class="grid__item">
+							<img class="thumbnail" src="assets/images/site-2.jpg" alt="Prospectors' Website" data="https://prospectorspomade.com">
+							<h4><a href="https://prospectorspomade.com" target="_blank">ProspectorsPomade.com</a></h4>
+						</div>
+
+						<div class="grid__item">
+							<img class="thumbnail" src="assets/images/site-3.jpg" alt="Gunthers' Website" data="https://gunthers.co">
+							<h4><a href="https://gunthers.co" target="_blank">Gunthers.co</a></h4>
+						</div>
+
+						<div class="grid__item">
+							<img class="thumbnail" src="assets/images/site-4.jpg" alt="Mr. Pomade's Website" data="https://www.pomade.com">
+							<h4><a href="https://www.pomade.com" target="_blank">Pomade.com</a></h4>
+						</div>
+
+						<div class="grid__item">
+							<img class="thumbnail" src="assets/images/site-5.jpg" alt="Suavecito Wholesale Site" data="https://wholesale.suavecitopomade.com">
+							<h4><a href="https://wholesale.suavecitopomade.com" target="_blank">Wholesale.Suavevito.com</a></h4>
+						</div>
+
 					</div>
-
-					<div class="grid__item">
-						<img class="thumbnail" src="assets/images/site-2.jpg" alt="Prospectors' Website" data="https://prospectorspomade.com">
-						<h4><a href="https://prospectorspomade.com" target="_blank">ProspectorsPomade.com</a></h4>
-					</div>
-
-					<div class="grid__item">
-						<img class="thumbnail" src="assets/images/site-3.jpg" alt="Gunthers' Website" data="https://gunthers.co">
-						<h4><a href="https://gunthers.co" target="_blank">Gunthers.co</a></h4>
-					</div>
-
-					<div class="grid__item">
-						<img class="thumbnail" src="assets/images/site-4.jpg" alt="Mr. Pomade's Website" data="https://www.pomade.com">
-						<h4><a href="https://www.pomade.com" target="_blank">Pomade.com</a></h4>
-					</div>
-
-					<div class="grid__item">
-						<img class="thumbnail" src="assets/images/site-5.jpg" alt="Suavecito Wholesale Site" data="https://wholesale.suavecitopomade.com">
-						<h4><a href="https://wholesale.suavecitopomade.com" target="_blank">Wholesale.Suavevito.com</a></h4>
-					</div>
-
 				</div>
-			</div>
 
-		</section>
+			</section>
 
-		<section id="Sidebar">
-			<div class="box">
-				<h3>Connect with kenput3r</h3>
+			<aside id="Sidebar" class="col-sm-4 col-sm-offset-1">
+				<div>
+					<h3>Connect with kenput3r</h3>
 
-				<hr>
+					<hr>
 
-				<div class="blocks">
-					<a href="https://github.com/devolve-wtf" target="_blank"><img src="assets/images/github.png"></a>
-					<a href="https://www.linkedin.com/in/kenneth-lyerly-931a9383/" target="_blank"><img src="assets/images/linkedin.png"></a>
-					<a href="https://stackoverflow.com/users/8074949/kenput3r" target="_blank"><img src="assets/images/stackoverflow.png"></a>
+					<div class="row">
+						<a class="col-xs-4" href="https://github.com/devolve-wtf" target="_blank"><img class="img-responsive" src="assets/images/github.png"></a>
+						<a class="col-xs-4" href="https://www.linkedin.com/in/kenneth-lyerly-931a9383/" target="_blank"><img class="img-responsive" src="assets/images/linkedin.png"></a>
+						<a class="col-xs-4" href="https://stackoverflow.com/users/8074949/kenput3r" target="_blank"><img class="img-responsive" src="assets/images/stackoverflow.png"></a>
+					</div>
 				</div>
-			</div>
-
-		</section>
-
+			</aside>
+		</div>
 	</main>
 
 	<footer>
