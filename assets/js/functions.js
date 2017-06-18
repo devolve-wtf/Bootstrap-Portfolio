@@ -36,7 +36,7 @@ function notifyContact() {
 var modal = document.getElementById('Modal');
 var closeButton = document.getElementById('CloseModal');
 var modalImage = document.getElementById('ModalImage');
-var thumbnails = document.getElementsByClassName('thumbnail');
+var thumbnails = document.getElementsByClassName('modal-thumbnail');
 var projectLink = document.getElementById('ProjectLink');
 var main = document.getElementById('Main');
 
