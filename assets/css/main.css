@@ -34,6 +34,10 @@ aside {
 	visibility: hidden;
 }
 
+.faded {
+	opacity: 0.3;
+}
+
 footer {
 	background-color: #666666;
 	border-top: 6px solid #4aaaa5;
@@ -64,6 +68,53 @@ h4 {
 
 h4 a {
 	color: #fff;
+}
+
+#Modal {
+	background-color: rgba(0,0,0,0.77);
+	width: 1024px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	transition: opacity 500ms;
+	z-index: 4;
+}
+
+#Modal.display-none {
+	opacity: 0;
+}
+
+#Modal .button {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 3rem;
+	padding: 2rem;
+	position: absolute;
+	right: 0;
+}
+
+#Modal h5 {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-size: 3rem;
+	margin-top: -4rem;
+	padding: 2rem;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#Modal h5 a {
+	color: #fff;
+}
+
+#Modal img {
+	border: 2rem solid #4aaaa5;
+	width: 100%;
 }
 
 .modal-thumbnail {
@@ -99,7 +150,14 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+	section, aside {
+		margin-bottom: 2rem;
+	}
 
+	#Sidebar .img-responsive {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 }
 

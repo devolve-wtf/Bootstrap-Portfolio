@@ -52,8 +52,8 @@ function openModal() {
 	var y = 0;
 
 	window.onscroll = function(e) {
-		y = window.scrollY - 50 + 'px';
-	}
+		y = window.scrollY - 60 + 'px';
+	};
 
 	for(var i = 0; i < thumbnails.length; i++) {
 		thumbnails[i].addEventListener('click', function() {
@@ -62,7 +62,7 @@ function openModal() {
 			modalImage.setAttribute('src', imageSrc);
 			projectLink.setAttribute('href', link);
 			modal.style.marginTop = y;
-			main.className = 'wrapper faded';
+			main.classList.add('faded');
 			modal.classList.remove('display-none');
 			console.log(y);
 		});
